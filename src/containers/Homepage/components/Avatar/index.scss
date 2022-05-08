@@ -1,0 +1,14 @@
+img {
+    height: 16.5625rem;
+    grid-column:1;
+    display:block;
+    margin-left:auto;
+    
+    @media screen and (max-width:1020px) {
+        margin:0;
+        margin-bottom: 1.375rem;
+    }
+    @media screen and (max-width:630px) {
+        height:10.3125rem;
+    }
+}

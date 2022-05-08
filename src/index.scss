@@ -1,0 +1,8 @@
+@import './variables.scss';
+
+* {
+    font-family: $font-regular;
+    color: $clr-blue-gray;
+    margin:0;
+    padding:0;
+}
