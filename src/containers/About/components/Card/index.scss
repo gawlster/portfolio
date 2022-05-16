@@ -101,7 +101,8 @@
         }
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         .front {
             width: 0;
             height: 0;

@@ -3,8 +3,6 @@ import './index.scss'
 import axios from 'axios'
 import ReCAPTCHA from 'react-google-recaptcha'
 
-//todo: change recaptcha domain when deployed
-
 type FormState = {
     email: string
     name: string
