@@ -23,8 +23,8 @@ const Projects = () => {
                 title='Route Weather'
                 desc='A web app to find weather along a route'
                 tech={['ReactJS', 'SCSS', 'REST API']}
-                liveLink='/'
-                sourceLink='https://github.com/gawlster/route-weather'
+                liveLink='https://gawlster.github.io/portfolio/request-access.html'
+                sourceLink='https://gawlster.github.io/portfolio/request-access.html'
             />
 
             <Project

@@ -1,0 +1,136 @@
+@import '../../../../variables.scss';
+
+.card {
+    --fs1: 1.75rem;
+    --fs2: 1.25rem;
+
+    cursor: default;
+    background: $clr-semi-dark-gray;
+    border: 1px solid black;
+    width: 30rem;
+    height: 20rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+
+    .front {
+        .title {
+            color: $clr-orange;
+        }
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        position: initial;
+        opacity: 1;
+    }
+
+    .back {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        .content {
+            background: transparent;
+            padding: 0;
+            margin: 0;
+        }
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        &.interest {
+            .content {
+                .title {
+                    color: $clr-burgundy;
+                    font-size: var(--fs1);
+                }
+                .desc {
+                    color: $clr-blue-gray;
+                    font-size: var(--fs2);
+                }
+                &.zero {
+                    margin-bottom: 1.25rem;
+                }
+            }
+        }
+        &.work {
+            .content {
+                .title {
+                    color: $clr-burgundy;
+                    font-size: var(--fs1);
+                }
+                .subtitle {
+                    font-style: italic;
+                    font-weight: 500;
+                    font-size: var(--fs2);
+                }
+                p {
+                    text-align: left;
+                    font-size: var(--fs2);
+                }
+                &.zero,
+                &.one {
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+        &.tech-skills,
+        &.soft-skills {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: auto;
+            ul {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                & > * + * {
+                    margin-top: 0.25rem;
+                }
+                li {
+                    color: $clr-blue-gray;
+                    font-size: var(--fs2);
+                }
+                list-style: circle;
+            }
+        }
+    }
+
+    &:hover {
+        .front {
+            width: 0;
+            height: 0;
+            position: absolute;
+            opacity: 0;
+        }
+        .back {
+            transition: 250ms;
+            width: 100%;
+            height: 100%;
+            position: initial;
+            opacity: 1;
+        }
+    }
+
+    @media screen and (max-width: 660px) {
+        width: 20rem;
+        height: 15rem;
+        --fs1: 1.5rem;
+        --fs2: 1rem;
+    }
+    @media screen and (max-width: 450px) {
+        width: 15rem;
+        height: 10rem;
+    }
+    @media screen and (max-width: 350px) {
+        width: 10rem;
+        height: 6rem;
+        --fs1: 1rem;
+        --fs2: 0.6rem;
+    }
+}

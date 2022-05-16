@@ -29,7 +29,7 @@
         border-radius: 1rem;
         transition: 150ms;
         &:hover {
-            background: $clr-soft-white;
+            background: $clr-semi-dark-gray;
             color: $clr-burgundy;
         }
         @media screen and (max-width: 360px) {

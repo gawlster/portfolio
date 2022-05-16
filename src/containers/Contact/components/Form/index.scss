@@ -1,0 +1,207 @@
+@import '../../../../variables.scss';
+
+.form {
+    text-align: left;
+    border-radius: 0.25rem;
+    padding: 5rem 3rem;
+    &.message-show {
+        padding: 1rem 3rem 5rem;
+    }
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background: $clr-soft-white;
+    width: 30rem;
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .result-message {
+        text-align: center;
+        padding: 0.75rem;
+        margin-bottom: 0.5rem;
+        &.success {
+            background: $clr-success-green;
+            color: $clr-soft-white;
+        }
+        &.failed {
+            background: $clr-error-red;
+            color: $clr-soft-white;
+        }
+    }
+    .name,
+    .email {
+        input {
+            width: 20rem;
+            padding: 0.5rem;
+            border: none;
+            outline: none;
+            background: transparent;
+            border-bottom: 1px solid black;
+            margin-bottom: 1px;
+        }
+    }
+    .name {
+        input {
+            &::-webkit-input-placeholder {
+                opacity: 0.8;
+                transition: 250ms;
+            }
+            &:focus {
+                border-bottom: 2px solid black;
+                margin-bottom: 0;
+            }
+            &:focus::-webkit-input-placeholder {
+                opacity: 0.3;
+            }
+        }
+    }
+    .email {
+        input {
+            &::-webkit-input-placeholder {
+                opacity: 0.8;
+                transition: 250ms;
+            }
+            &:focus {
+                border-bottom: 2px solid black;
+                margin-bottom: 0;
+            }
+            &:focus::-webkit-input-placeholder {
+                opacity: 0.3;
+            }
+        }
+    }
+    .message {
+        textarea {
+            background: transparent;
+            border: none;
+            outline: none;
+            width: 25rem;
+            min-height: 1.5rem;
+            resize: vertical;
+            border-bottom: 1px solid black;
+            padding: 0.5rem;
+            margin-bottom: 1px;
+            &::-webkit-input-placeholder {
+                opacity: 0.8;
+                transition: 250ms;
+            }
+            &:focus {
+                margin-bottom: 0;
+                border-bottom: 2px solid black;
+            }
+            &:focus::-webkit-input-placeholder {
+                opacity: 0.3;
+            }
+        }
+    }
+    .recaptcha {
+        overflow: hidden;
+        & > div {
+            overflow: hidden;
+            & > div {
+                overflow: hidden;
+            }
+        }
+    }
+
+    .submit-button {
+        border: none;
+        outline: none;
+        background: $clr-orange;
+        color: $clr-soft-white;
+        padding-inline: 0.5rem;
+        padding-block: 0.75rem;
+        cursor: pointer;
+        width: 10rem;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: 250ms;
+        &:hover {
+            background: transparent;
+            color: $clr-orange;
+        }
+    }
+
+    @media screen and (max-width: 690px) {
+        width: 20rem;
+        .name,
+        .email {
+            input {
+                width: 15rem;
+            }
+        }
+        .message {
+            textarea {
+                width: 17rem;
+            }
+        }
+    }
+    @media screen and (max-width: 520px) {
+        width: 14rem;
+        padding: 4rem 2rem;
+        &.message-show {
+            padding: 1rem 2rem 4rem;
+        }
+        .name,
+        .email {
+            input {
+                width: 8rem;
+                font-size: 0.75rem;
+            }
+        }
+        .message {
+            textarea {
+                width: 11rem;
+                font-size: 0.75rem;
+                min-height: 1rem;
+            }
+        }
+        .submit-button {
+            width: 6rem;
+            font-size: 0.75rem;
+            padding-inline: 0.3rem;
+            padding-block: 0.6rem;
+        }
+        .recaptcha {
+            height: 3.5rem;
+            & > div {
+                & > div {
+                    transform: scale(0.6);
+                    -webkit-transform: scale(0.6);
+                    transform-origin: 0 0;
+                    -webkit-transform-origin: 0 0;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 340px) {
+        width: 10rem;
+        .recaptcha {
+            height: 3rem;
+            & > div {
+                & > div {
+                    transform: scale(0.5);
+                    -webkit-transform: scale(0.5);
+                    transform-origin: 0 0;
+                    -webkit-transform-origin: 0 0;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 270px) {
+        width: 8rem;
+        .recaptcha {
+            height: 1.5rem;
+            & > div {
+                & > div {
+                    transform: scale(0.3);
+                    -webkit-transform: scale(0.3);
+                    transform-origin: 0 0;
+                    -webkit-transform-origin: 0 0;
+                }
+            }
+        }
+    }
+}

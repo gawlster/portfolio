@@ -1,19 +1,23 @@
 @import '../../variables.scss';
 
-.contact {
-    background: $clr-semi-dark-gray;
+.about {
+    background: $clr-soft-white;
+    text-align: center;
     padding-block: 6.25rem;
     padding-inline: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    gap: 3rem;
     .header {
         color: $clr-dark-blue;
-        margin-bottom: 1rem;
     }
-    .sub {
-        margin-bottom: 3rem;
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
     }
 }
