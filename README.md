@@ -52,5 +52,4 @@ As you can see from the images, the layout was much neater, and at the same time
 
 ### Still to come...
 
-There is still a lot of work to be done with this website. To see a full list of things to-do, check out the `Issues` section of the repo. This README will be updated periodically to reflect changes and updates.
-If you have any suggestions or find any bugs, please feel free to add an issue to the repo, and I will take a look at it!
+This is an ongoing project that will never be truly complete. I plan to treat it as a place to experiment with new UI and UX ideas, new programming strategies, and a place to constantly improve my skills. That being said, if you find a bug or have a feature in mind that you think would enhance the site, feel free to raise an issue and I will check for updates periodically.
