@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.8e1fd275.css",
+    "main.js": "/portfolio/static/js/main.a730c6cd.js",
+    "static/media/route-weather-thumbnail.jpg": "/portfolio/static/media/route-weather-thumbnail.fdb9f08570f84c63acf0.jpg",
+    "static/media/website-thumbnail.jpg": "/portfolio/static/media/website-thumbnail.d09752996a4fe7d43158.jpg",
+    "static/media/cocktail-website-thumbnail.jpg": "/portfolio/static/media/cocktail-website-thumbnail.161263e1dab0de9afbb5.jpg",
+    "static/media/avatar.png": "/portfolio/static/media/avatar.40b569326e999f713911.png",
+    "index.html": "/portfolio/index.html",
+    "main.8e1fd275.css.map": "/portfolio/static/css/main.8e1fd275.css.map",
+    "main.a730c6cd.js.map": "/portfolio/static/js/main.a730c6cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e1fd275.css",
+    "static/js/main.a730c6cd.js"
+  ]
+}
