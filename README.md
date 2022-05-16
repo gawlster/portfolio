@@ -50,7 +50,7 @@ As I wasn't working with assignment restrictions, I had the freedom to change a 
 
 As you can see from the images, the layout was much neater, and at the same time it was much easier to update the layout of certain components without altering the entire page.
 
-Source code for version 2 can be found <a href='https://github.com/gawlster/portfolio-old'>here</a>.
+Source code for version 2 can be found <a href='https://github.com/gawlster/portfolio-old' target='_blank'>here</a>.
 
 ### Third Iteration:
 
