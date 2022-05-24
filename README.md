@@ -36,7 +36,7 @@ And finally, perhaps the sub-page I spent the most time working on, the contact 
 
 ### Second iteration:
 
-The current state of the project is in this second iteration. As I wasn't working with assignment restrictions, I had the freedom to change a few things to my liking. First and foremost, I made the entire page in one html document, and allowed a scrolling behaviour, rather than many subpages. I still included the navbar at the top of the screen, but made it smooth scroll to whichever section the user clicks on. I like this style of webpage a lot better, because it allows the user multiple ways of navigating a page, rather than requiring them to use the navbar. Another notable change was with the homescreen. While I still had my name and position set in the middle, followed by my social media links, but I changed the background to something a little bit lighter (I chose a picture of a beach). In future iterations, I will likely change this image again.
+As I wasn't working with assignment restrictions, I had the freedom to change a few things to my liking. First and foremost, I made the entire page in one html document, and allowed a scrolling behaviour, rather than many subpages. I still included the navbar at the top of the screen, but made it smooth scroll to whichever section the user clicks on. I like this style of webpage a lot better, because it allows the user multiple ways of navigating a page, rather than requiring them to use the navbar. Another notable change was with the homescreen. While I still had my name and position set in the middle, followed by my social media links, but I changed the background to something a little bit lighter (I chose a picture of a beach). In future iterations, I will likely change this image again.
 
 ![image](https://user-images.githubusercontent.com/65568579/158486882-aaaaeaad-b233-46ab-9db2-8213c2cc6d43.png)
 
@@ -49,6 +49,12 @@ The current state of the project is in this second iteration. As I wasn't workin
 ![image](https://user-images.githubusercontent.com/65568579/158487083-a9dc0e12-53e7-4350-9277-84014885b830.png)
 
 As you can see from the images, the layout was much neater, and at the same time it was much easier to update the layout of certain components without altering the entire page.
+
+Source code for version 2 can be found <a href='https://github.com/gawlster/portfolio-old' target='_blank'>here</a>.
+
+### Third Iteration:
+
+The current state of the project is version 3. Built using ReactTS and SCSS.
 
 ### Still to come...
 
