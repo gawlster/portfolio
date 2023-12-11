@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b925a061.css",
-    "main.js": "/portfolio/static/js/main.e24fd7f7.js",
+    "main.css": "/portfolio/static/css/main.7d937493.css",
+    "main.js": "/portfolio/static/js/main.e37cdafb.js",
     "static/media/cocktail-website-thumbnail.jpg": "/portfolio/static/media/cocktail-website-thumbnail.161263e1dab0de9afbb5.jpg",
     "static/media/nvim-thumbnail.jpg": "/portfolio/static/media/nvim-thumbnail.95bbf7c9c46db5e36a01.jpg",
     "static/media/avatar.png": "/portfolio/static/media/avatar.40b569326e999f713911.png",
     "static/media/rosewald-thumbnail.jpg": "/portfolio/static/media/rosewald-thumbnail.32b2dd02d7dd482611a8.jpg",
     "index.html": "/portfolio/index.html",
-    "main.b925a061.css.map": "/portfolio/static/css/main.b925a061.css.map",
-    "main.e24fd7f7.js.map": "/portfolio/static/js/main.e24fd7f7.js.map"
+    "main.7d937493.css.map": "/portfolio/static/css/main.7d937493.css.map",
+    "main.e37cdafb.js.map": "/portfolio/static/js/main.e37cdafb.js.map"
   },
   "entrypoints": [
-    "static/css/main.b925a061.css",
-    "static/js/main.e24fd7f7.js"
+    "static/css/main.7d937493.css",
+    "static/js/main.e37cdafb.js"
   ]
 }
