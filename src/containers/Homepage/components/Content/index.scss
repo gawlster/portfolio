@@ -1,68 +1,70 @@
-@import '../../../../variables.scss';
+@import "../../../../variables.scss";
 
 .content {
-    margin-right: 19%;
-    .bottom,
-    .school,
-    .bottom2 {
-        display: inline;
+  margin-right: 19%;
+  .bottom,
+  .school,
+  .bottom2 {
+    display: inline;
+  }
+  .school {
+    font-weight: 700;
+    color: $clr-light-blue;
+  }
+  .top,
+  .bottom,
+  .bottom2,
+  .school {
+    font-size: $font-size-subheader;
+  }
+  .name {
+    .first,
+    .last {
+      display: inline;
+      font-size: $font-size-header;
+      font-weight: 400;
     }
-    .school {
-        font-weight: 700;
-        color: $clr-light-blue;
+    .last {
+      margin-left: 0.5rem;
+      color: $clr-orange;
+      font-weight: 700;
     }
+  }
+
+  //for portrait tablets
+  @media screen and (max-width: 1020px) {
+    margin-inline: 13%;
+  }
+
+  //for mobile
+  @media screen and (max-width: 630px) {
+    margin-inline: 10%;
     .top,
     .bottom,
     .bottom2,
     .school {
-        font-size: $font-size-subheader;
+      font-size: $font-size-mobile-subheader;
     }
     .name {
-        .first,
-        .last {
-            display: inline;
-            font-size: $font-size-header;
-        }
-        .last {
-            margin-left: 0.5rem;
-            color: $clr-orange;
-        }
+      .first,
+      .last {
+        font-size: $font-size-mobile-header;
+      }
     }
+  }
 
-    //for portrait tablets
-    @media screen and (max-width: 1020px) {
-        margin-inline: 13%;
+  @media screen and (max-width: 320px) {
+    .top,
+    .bottom,
+    .bottom2,
+    .school {
+      font-size: $font-size-small-subheader;
     }
-
-    //for mobile
-    @media screen and (max-width: 630px) {
-        margin-inline: 10%;
-        .top,
-        .bottom,
-        .bottom2,
-        .school {
-            font-size: $font-size-mobile-subheader;
-        }
-        .name {
-            .first,
-            .last {
-                font-size: $font-size-mobile-header;
-            }
-        }
+    .name {
+      .first,
+      .last {
+        font-size: $font-size-small-header;
+      }
     }
-
-    @media screen and (max-width: 320px) {
-        .top,
-        .bottom,
-        .bottom2,
-        .school {
-            font-size: $font-size-small-subheader;
-        }
-        .name {
-            .first,
-            .last {
-                font-size: $font-size-small-header;
-            }
-        }
-    }
+  }
 }
