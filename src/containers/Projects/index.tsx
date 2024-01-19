@@ -1,14 +1,13 @@
-import React from "react";
-import "./index.scss";
-import Project from "./components/Project";
-import rosewald from "../../images/rosewald-thumbnail.jpg";
-import nvim from "../../images/nvim-thumbnail.jpg";
 import cf from "../../images/cocktail-website-thumbnail.jpg";
+import rayTracer from "../../images/RayTracerSample.png";
+import rosewald from "../../images/rosewald-thumbnail.jpg";
+import Project from "./components/Project";
+import "./index.scss";
 
 const Projects = () => {
   return (
     <div className="projects">
-      <h1>These are some projects I have been working on:</h1>
+      <h1>Some projects I have been working on:</h1>
       <Project
         img={rosewald}
         title="Rosewald Studios"
@@ -19,11 +18,11 @@ const Projects = () => {
       />
 
       <Project
-        img={nvim}
-        title="Nvim config"
-        desc="A custom Neovim configuration consisting of plugins and custom scripts"
-        tech={["Lua", "VimScript"]}
-        onlySourceCodeLink="https://github.com/gawlster/nvim"
+        img={rayTracer}
+        title="Ray Tracer"
+        desc="A dynamic, recursive ray tracing program which can render arbitrary spheres and ellipsoids"
+        tech={["Python", "OOP"]}
+        private
       />
 
       <Project

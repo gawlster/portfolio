@@ -1,19 +1,20 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .contact {
-    background: $clr-semi-dark-gray;
-    padding-block: 6.25rem;
-    padding-inline: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    .header {
-        color: $clr-dark-blue;
-        margin-bottom: 1rem;
-    }
-    .sub {
-        margin-bottom: 3rem;
-    }
+  background: $clr-semi-dark-gray;
+  padding-block: 6.25rem;
+  padding-inline: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .header {
+    color: $clr-dark-blue;
+    margin-bottom: 1rem;
+  }
+  .sub {
+    max-width: 55rem;
+    margin-bottom: 3rem;
+  }
 }
