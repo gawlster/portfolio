@@ -72,7 +72,7 @@ export const qualifications = {
       description: (
         <Stack pl={36} gap={0}>
           <Title order={4} mb={4}>
-            Software Developer - Giftbit, 2022-2024 ℹ️
+            Software Developer - Giftbit, 2022-2024
           </Title>
           <SublistText>
             Built, tested, and branded fully custom authentication flows using

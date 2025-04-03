@@ -7,6 +7,14 @@ import "./index.css";
 
 const theme = createTheme({
   fontFamily: "Roboto Condensed, sans-serif",
+  variantColorResolver: () => {
+    return {
+      background: "#E8A55B",
+      hover: "#D68F47",
+      border: "#C77A34",
+      color: "#2A1C0E",
+    };
+  },
 });
 
 createRoot(document.getElementById("root")!).render(

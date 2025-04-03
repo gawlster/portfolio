@@ -5,7 +5,9 @@ import { qualifications } from "../data";
 export default function Qualifications() {
   return (
     <Section bg="light">
-      <Title order={2}>{qualifications.title}</Title>
+      <Title order={2} mb="20px">
+        {qualifications.title}
+      </Title>
       <Container w="100%" maw="700px">
         <Accordion>
           {qualifications.items.map((item) => (

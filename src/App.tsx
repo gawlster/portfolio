@@ -1,3 +1,4 @@
+import Contact from "./pages/Contact";
 import Homepage from "./pages/Homepage";
 import Projects from "./pages/Projects";
 import Qualifications from "./pages/Qualifications";
@@ -8,6 +9,7 @@ function App() {
       <Homepage />
       <Projects />
       <Qualifications />
+      <Contact />
     </>
   );
 }

@@ -59,8 +59,10 @@ const gridCols = [
 export default function Projects() {
   return (
     <Section bg="dark">
-      <Title order={2}>{projects.title}</Title>
-      <Container w="85%" maw="800px">
+      <Title order={2} mb="20px">
+        {projects.title}
+      </Title>
+      <Container w="100%" maw="700px">
         <Grid maw="950px">
           {projects.items.map((project, index) => (
             <Grid.Col key={index} span={gridCols[index]}>

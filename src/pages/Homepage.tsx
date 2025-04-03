@@ -4,7 +4,7 @@ import { homepage } from "../data";
 
 export default function Homepage() {
   return (
-    <Section bg="light">
+    <Section bg="light" fullHeight>
       <Container w="80%" maw="800px">
         <Group
           style={{
