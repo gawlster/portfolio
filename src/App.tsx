@@ -1,11 +1,11 @@
-import Section from "./components/Section";
 import Homepage from "./pages/Homepage";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
     <>
       <Homepage />
-      <Section bg="dark">world</Section>
+      <Projects />
     </>
   );
 }
