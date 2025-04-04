@@ -1,6 +1,9 @@
-import image from "../public/cocktail-website-thumbnail.jpg";
-import nvim from "../public/nvim-thumbnail.jpg";
-import rosewald from "../public/rosewald-thumbnail.jpg";
+import {
+  default as image,
+  default as raytracer,
+} from "./assets/RayTracerSample.png";
+import nvim from "./assets/nvim-thumbnail.jpg";
+import rosewald from "./assets/rosewald-thumbnail.jpg";
 
 export const homepage = {
   preTitle: "Hello, World! I'm",
@@ -127,11 +130,27 @@ export const projects = {
       ],
     },
     {
-      title: "Project 5",
-      description: "Description of project 5",
-      imageObject: image,
-      tags: [],
-      ctas: [],
+      title: "Raytracer",
+      description:
+        "A dynamic, recursive ray tracing program which can render arbitrary spheres and ellipsoids",
+      imageObject: raytracer,
+      tags: [
+        {
+          title: "Python",
+          color: "blue",
+        },
+        {
+          title: "Computer Graphics",
+          color: "blue",
+        },
+      ],
+      ctas: [
+        {
+          title: "Source Code",
+          link: "https://github.com/gawlster/raytracer-python",
+          color: "orange",
+        },
+      ],
     },
     {
       title: "Project 6",

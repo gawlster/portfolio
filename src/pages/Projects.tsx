@@ -7,6 +7,7 @@ import {
   Group,
   Modal,
   Paper,
+  Stack,
   Text,
   Title,
 } from "@mantine/core";
@@ -58,7 +59,7 @@ function Tile({
         onClick={open}
       ></Paper>
       <Modal opened={opened} onClose={close} centered withCloseButton={false}>
-        <BackgroundImage src={project.imageObject} h="120px" />
+        <BackgroundImage src={project.imageObject} h="160px" />
         <Container pt="8px" pb="8px">
           <Title order={3}>{project.title}</Title>
           <Group mt="4px" mb="16px" gap="4px">
@@ -113,10 +114,8 @@ export default function Projects() {
 
   return (
     <Section bg="dark">
-      <Title order={2} mb="20px">
-        {projects.title}
-      </Title>
-      <Container w="100%" maw="700px">
+      <Title order={2}>{projects.title}</Title>
+      <Stack w="100%" maw="700px" mt="20px" mb="20px">
         <Grid maw="950px">
           {projects.items.map((project, index) => (
             <Grid.Col key={index} span={gridCols[index]}>
@@ -129,7 +128,17 @@ export default function Projects() {
             </Grid.Col>
           ))}
         </Grid>
-      </Container>
+        <Button
+          mt="12px"
+          variant="outline"
+          color="blue"
+          component="a"
+          href="https://github.com/gawlster"
+          target="_blank"
+        >
+          View more
+        </Button>
+      </Stack>
     </Section>
   );
 }

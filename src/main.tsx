@@ -22,6 +22,14 @@ const theme = createTheme({
       };
     }
     if (input.color === "blue") {
+      if (input.variant === "outline") {
+        return {
+          background: "transparent",
+          hover: "#E3F2F7", // Very light blue on hover
+          border: "#A7D8E7", // Same as the filled button's background
+          color: "#1A2629", // Same dark text for consistency
+        };
+      }
       return {
         background: "#A7D8E7",
         hover: "#8EC9D6",
