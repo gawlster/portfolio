@@ -6,14 +6,17 @@ export default function Section({
   bg,
   fullHeight,
   small,
+  noInnerContainer,
 }: {
   children: React.ReactNode;
   bg: "dark" | "light";
   fullHeight?: boolean;
   small?: boolean;
+  noInnerContainer?: boolean;
 }) {
   const fullHeightStyle = fullHeight
     ? {
+        height: "100vh",
         minHeight: "100vh",
       }
     : {
@@ -33,9 +36,13 @@ export default function Section({
             : "var(--mantine-color-gray-0)",
       }}
     >
-      <Container maw="720px" w="100%" pt="52px" pb="52px">
-        {children}
-      </Container>
+      {noInnerContainer ? (
+        children
+      ) : (
+        <Container maw="720px" w="100%" pt="52px" pb="52px">
+          {children}
+        </Container>
+      )}
     </div>
   );
 }

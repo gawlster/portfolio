@@ -16,3 +16,13 @@
   --text-color: var(--color-dark);
   --text-color-light: #fff;
 }
+
+.mantine-Modal-content {
+  border-radius: 12px;
+}
+
+.mantine-Modal-body {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
