@@ -253,12 +253,12 @@ export const qualifications = {
         date: "2022-2024",
         listItems: [
           "Built, tested, and branded fully custom authentication flows using Microsoft Azure B2C and Custom Policies",
-          "Worked in a team of developers to upgrade our app from a legacy Grails server rendered solution to a single-page React app",
+          "Worked in a team of developers to upgrade our app from a legacy Grails server-rendered solution to a single-page React app",
           "Responded to business requests quickly and efficiently to ensure our customers could use our app without issue",
         ],
         quotes: [
           {
-            text: "I've been in the software development space for over 25 years and Connor certainly ranks in the top echelon of fast learning, high focus, yet down to earth people I've come across.",
+            text: "I've been in the software development space for over 25 years and Connor certainly ranks in the top echelon of fast learning, high focus, yet down to Earth people I've come across.",
             cite: "- Steve, Manager @ Giftbit",
           },
         ],
