@@ -1,9 +1,9 @@
-import {
-  default as image,
-  default as raytracer,
-} from "./assets/RayTracerSample.png";
+import { default as coffeeRun } from "./assets/coffee-run-thumbnail.png";
+import dayTrading from "./assets/day-trading-thumbnail.png";
 import nvim from "./assets/nvim-thumbnail.jpg";
+import raytracer from "./assets/ray-tracer-thumbnail.png";
 import rosewald from "./assets/rosewald-thumbnail.jpg";
+import underwaterExplorer from "./assets/underwater-explorer-thumbnail.png";
 
 export const homepage = {
   preTitle: "Hello, World! I'm",
@@ -30,6 +30,10 @@ export type ProjectInfo = {
   imageObject: string;
   tags: Tag[];
   ctas: CTA[];
+  badge?: {
+    icon: string;
+    tooltip: string;
+  };
 };
 
 export const projects = {
@@ -71,7 +75,7 @@ export const projects = {
       title: "Coffee Run",
       description:
         "An infinite, procedurally generated runner game where coffee and donuts race to escape relentless knives in a fast-paced chase",
-      imageObject: image, // TODO
+      imageObject: coffeeRun,
       tags: [
         {
           title: "Unity",
@@ -100,11 +104,41 @@ export const projects = {
       ],
     },
     {
-      title: "Project 3",
-      description: "Description of project 3",
-      imageObject: image,
-      tags: [],
-      ctas: [],
+      title: "Underwater Explorer",
+      description:
+        "A 2D underwater scene built using hierarchical modeling including a diver, fish, and seaweed",
+      imageObject: underwaterExplorer,
+      tags: [
+        {
+          title: "Javascript",
+          color: "blue",
+        },
+        {
+          title: "WebGL",
+          color: "blue",
+        },
+        {
+          title: "Computer Graphics",
+          color: "blue",
+        },
+      ],
+      ctas: [
+        {
+          title: "Live Site",
+          link: "https://gawlster.github.io/underwater-explorer/main.html",
+          color: "orange",
+        },
+        {
+          title: "Source Code",
+          link: "https://github.com/gawlster/underwater-explorer",
+          color: "orange",
+        },
+      ],
+      badge: {
+        icon: "📓",
+        tooltip:
+          "Created as part of a Computer Graphics course at the University of Victoria",
+      },
     },
     {
       title: "Custom Neovim Config",
@@ -151,26 +185,50 @@ export const projects = {
           color: "orange",
         },
       ],
+      badge: {
+        icon: "📓",
+        tooltip:
+          "Created as part of a Computer Graphics course at the University of Victoria",
+      },
     },
     {
-      title: "Project 6",
-      description: "Description of project 6",
-      imageObject: image,
-      tags: [],
-      ctas: [],
-    },
-    {
-      title: "Project 7",
-      description: "Description of project 7",
-      imageObject: image,
-      tags: [],
-      ctas: [],
+      title: "Day Trading System",
+      description:
+        "A distributed microservices day trading system for buying and selling stocks in real time",
+      imageObject: dayTrading,
+      tags: [
+        {
+          title: "Microservices",
+          color: "blue",
+        },
+        {
+          title: "Javascript",
+          color: "blue",
+        },
+        {
+          title: "System Architecture",
+          color: "blue",
+        },
+      ],
+      ctas: [
+        {
+          title: "Source Code",
+          link: "https://github.com/Newish0/seng468-day-trading",
+          color: "orange",
+        },
+      ],
+      badge: {
+        icon: "📓",
+        tooltip:
+          "Created as part of a Software Scalability course at the University of Victoria",
+      },
     },
   ],
 };
 
 export const qualificationSections = [
   "workExperience",
+  "education",
   "technicalSkills",
   "softSkills",
   "interests",
@@ -178,6 +236,7 @@ export const qualificationSections = [
 
 export type QualificationSections =
   | "workExperience"
+  | "education"
   | "technicalSkills"
   | "softSkills"
   | "interests";
@@ -203,6 +262,26 @@ export const qualifications = {
             cite: "- Steve, Manager @ Giftbit",
           },
         ],
+      },
+    ],
+  },
+  education: {
+    title: "Education",
+    icon: "🎓",
+    items: [
+      {
+        title: "Bachelor of Science in Computer Science",
+        school: "University of Victoria",
+        date: "2020-2025",
+        listItems: [
+          "Relevant Coursework: Data Structures, Algorithms, Software Engineering, Computer Graphics, Web Development, Database Management",
+        ],
+      },
+      {
+        title: "High School Diploma",
+        school: "William Aberhart High School",
+        date: "2017-2020",
+        listItems: ["Honour's Society Member"],
       },
     ],
   },

@@ -13,6 +13,8 @@ export default function Qualifications() {
     switch (key) {
       case "workExperience":
         return <WorkExperience data={qualifications.workExperience.items} />;
+      case "education":
+        return <Education data={qualifications.education.items} />;
       case "technicalSkills":
         return <List data={qualifications.technicalSkills.items} />;
       case "softSkills":
@@ -57,8 +59,8 @@ function WorkExperience({
 }: {
   data: typeof qualifications.workExperience.items;
 }) {
-  return data.map((item) => (
-    <Stack pl={36} gap={0}>
+  return data.map((item, index) => (
+    <Stack pl={36} gap={0} mt={index === 0 ? 0 : 16}>
       <Title order={4} mb={4}>
         {item.title} - {item.company} {item.date}
       </Title>
@@ -81,6 +83,19 @@ function WorkExperience({
         >
           "{quote.text}"
         </Blockquote>
+      ))}
+    </Stack>
+  ));
+}
+
+function Education({ data }: { data: typeof qualifications.education.items }) {
+  return data.map((item, index) => (
+    <Stack pl={36} gap={0} mt={index === 0 ? 0 : 16}>
+      <Title order={4} mb={4}>
+        {item.title} - {item.school} {item.date}
+      </Title>
+      {item.listItems.map((listItem, index) => (
+        <ListText key={index}>{listItem}</ListText>
       ))}
     </Stack>
   ));
