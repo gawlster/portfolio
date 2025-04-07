@@ -1,4 +1,4 @@
-import { default as coffeeRun } from "./assets/coffee-run-thumbnail.png";
+import coffeeRun from "./assets/coffee-run-thumbnail.jpg";
 import dayTrading from "./assets/day-trading-thumbnail.png";
 import nvim from "./assets/nvim-thumbnail.jpg";
 import raytracer from "./assets/ray-tracer-thumbnail.png";
@@ -61,7 +61,7 @@ export const projects = {
       ctas: [
         {
           title: "Live Site",
-          link: "https://rosewaldstudios.com",
+          link: "https://rosewald-gawlster.vercel.app/",
           color: "orange",
         },
         {

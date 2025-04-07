@@ -165,7 +165,7 @@ export default function Projects() {
   return (
     <Section bg="dark">
       <Title order={2}>{projects.title}</Title>
-      <Stack w="100%" maw="700px" mt="20px" mb="20px">
+      <Stack w="95%" maw="700px" mt="20px" mb="20px" ml="2.5%">
         <Grid maw="950px">
           {projects.items.map((project, index) => (
             <Grid.Col key={index} span={gridCols[index]}>
