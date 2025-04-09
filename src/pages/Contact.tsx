@@ -20,7 +20,7 @@ export default function Contact() {
           <Button
             variant="light"
             component="a"
-            href="mailto:connorgawley@gmail.com"
+            href="mailto:me@connorgawley.ca"
             target="_blank"
             color="orange"
           >
