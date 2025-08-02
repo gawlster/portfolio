@@ -1,9 +1,9 @@
 import coffeeRun from "./assets/coffee-run-thumbnail.jpg";
-import nvim from "./assets/nvim-thumbnail.jpg";
 import raytracer from "./assets/ray-tracer-thumbnail.png";
 import rosewald from "./assets/rosewald-thumbnail.jpg";
 import underwaterExplorer from "./assets/underwater-explorer-thumbnail.png";
 import kando from "./assets/kando-thumbnail.png"
+import wikilink from "./assets/wikilink-thumbnail.png";
 
 export const homepage = {
     preTitle: "Hello, World! I'm",
@@ -72,35 +72,34 @@ export const projects = {
             ],
         },
         {
-            title: "Coffee Run",
-            description:
-                "An infinite, procedurally generated runner game where coffee and donuts race to escape relentless knives in a fast-paced chase",
-            imageObject: coffeeRun,
+            title: "WikiLink",
+            description: "A game to strategically navigate between Wikipedia articles",
+            imageObject: wikilink,
             tags: [
                 {
-                    title: "Unity",
+                    title: "Web Components",
                     color: "blue",
                 },
                 {
-                    title: "C#",
+                    title: "Typescript",
                     color: "blue",
                 },
                 {
-                    title: "Game Design",
+                    title: "NodeJS",
                     color: "blue",
                 },
             ],
             ctas: [
                 {
-                    title: "Itch.io",
-                    link: "https://gawlster.itch.io/coffee-run",
+                    title: "Chrome Extension",
+                    link: "https://chromewebstore.google.com/detail/wikilink/emkinglnjogipkbdaolejamloekkjboj",
                     color: "orange",
                 },
                 {
                     title: "Source Code",
-                    link: "https://github.com/gawlster/coffeerun",
+                    link: "https://github.com/gawlster/wikilink-client",
                     color: "orange",
-                },
+                }
             ],
         },
         {
@@ -141,24 +140,33 @@ export const projects = {
             },
         },
         {
-            title: "Custom Neovim Config",
+            title: "Coffee Run",
             description:
-                "A highly customizable Neovim configuration tailored to streamline development workflows and boost productivity",
-            imageObject: nvim,
+                "An infinite, procedurally generated runner game where coffee and donuts race to escape relentless knives in a fast-paced chase",
+            imageObject: coffeeRun,
             tags: [
                 {
-                    title: "Neovim",
+                    title: "Unity",
                     color: "blue",
                 },
                 {
-                    title: "Lua",
+                    title: "C#",
+                    color: "blue",
+                },
+                {
+                    title: "Game Design",
                     color: "blue",
                 },
             ],
             ctas: [
                 {
+                    title: "Itch.io",
+                    link: "https://gawlster.itch.io/coffee-run",
+                    color: "orange",
+                },
+                {
                     title: "Source Code",
-                    link: "https://github.com/gawlster/nvim",
+                    link: "https://github.com/gawlster/coffeerun",
                     color: "orange",
                 },
             ],
