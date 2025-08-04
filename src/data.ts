@@ -284,7 +284,7 @@ export const qualifications = {
                 date: "2020-2025",
                 listItems: [
                     "Relevant Coursework: Data Structures, Algorithms, Software Engineering, Computer Graphics, Web Development, Database Management",
-                    "Upper-year GPA (projected): 8.3/9 (9-point scale), approximately 3.8/4 (converted to 4-point scale)"
+                    "Graduating GPA: 8.3/9 (9-point scale), approximately 3.8/4 (converted to 4-point scale)"
                 ],
             },
             {
